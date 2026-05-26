@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Leave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2 style="text-align:center;">Apply Leave</h2>
+
+    <!-- Leave Type -->
+    <label>Leave Type:</label>
+    <select id="leaveType" onchange="toggleLeaveType()">
+        <option value="general">General Leave</option>
+        <option value="weekend">Weekend Outing</option>
+    </select>
+
+    <!-- GENERAL LEAVE -->
+    <div id="generalFields">
+
+        <label>Start Date:</label>
+        <input type="date" id="startDate">
+
+        <label>End Date:</label>
+        <input type="date" id="endDate">
+
+        <label>Start Time:</label>
+        <input type="time" id="startTime">
+
+        <label>End Time:</label>
+        <input type="time" id="endTime">
+
+    </div>
+
+    <!-- WEEKEND LEAVE -->
+    <div id="weekendFields" style="display:none;">
+
+        <label>Select Day:</label>
+        <input type="date" id="weekendDate">
+
+        <label>Select Time Slot:</label>
+        <select id="timeSlot">
+            <option value="9:30-3:30">9:30 - 3:30</option>
+            <option value="10:30-4:30">10:30 - 4:30</option>
+            <option value="11:30-5:30">11:30 - 5:30</option>
+            <option value="12:30-6:30">12:30 - 6:30</option>
+        </select>
+
+    </div>
+
+    <button id="impactBtn" onclick="calculateImpact()">Check Attendance Impact</button>
+
+    <p id="result"></p>
+
+    <button onclick="submitLeave()">Submit Leave</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

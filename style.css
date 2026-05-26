@@ -13,7 +13,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;   /* ðŸ”¥ REQUIRED */
+    grid-auto-flow: column;   /* 🔥 REQUIRED */
     column-gap: 15px;
     row-gap: 5px;
     grid-template-rows: repeat(6, auto);
@@ -47,7 +47,7 @@ body {
     padding: 30px;
 
     display: flex;
-    flex-direction: column;   /* âœ… FIX */
+    flex-direction: column;   /* ✅ FIX */
     justify-content: center;  /* vertical center */
     align-items: center;      /* horizontal center */
 }

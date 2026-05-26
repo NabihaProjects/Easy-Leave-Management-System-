@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT: Attendance -->
+    <div class="left-panel">
+        <h2>Attendance</h2>
+        <div id="attendanceList"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-panel">
+
+        <!-- Top User Info -->
+        <div class="user-box">
+            <p id="userName"></p>
+            <p id="userId"></p>
+        </div>
+
+                <!-- Options -->
+        <div class="actions">
+            <button onclick="goToApply()">Apply Leave</button>
+            <button onclick="goToStatus()">View Status</button>
+            <button onclick="goToProof()">Upload Proof</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

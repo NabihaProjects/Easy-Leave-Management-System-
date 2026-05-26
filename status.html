@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-box">
+
+    <h2>Leave Status</h2>
+
+    <p id="leaveType"></p>
+    <p id="mentorStatus"></p>
+    <p id="wardenStatus"></p>
+    <p id="finalStatus"></p>
+
+    <div class="actions">
+
+        <!-- Mentor Buttons -->
+        <div id="mentorButtons">
+            <button onclick="simulateMentorApprove()">Mentor Approve</button>
+            <button onclick="simulateMentorReject()">Mentor Reject</button>
+            <button onclick="simulateWardenApprove()">Warden Approve</button>
+            <button onclick="simulateWardenReject()">Warden Reject</button>
+        </div>
+
+
+    </div>
+
+    <br>
+
+    <button onclick="extendLeave()">Extend Leave</button>
+    <button onclick="goBack()">Back</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
